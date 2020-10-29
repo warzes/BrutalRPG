@@ -26,9 +26,9 @@
 #define WINVER _WIN32_WINNT
 #define DIRECTINPUT_VERSION 0x0800
 
-#define WIN32_LEAN_AND_MEAN      // 
-#define WIN32_EXTRA_LEAN         // 
-#define VC_EXTRALEAN             // 
+//#define WIN32_LEAN_AND_MEAN      // 
+//#define WIN32_EXTRA_LEAN         // 
+//#define VC_EXTRALEAN             // 
 //#define NOIME                    // 
 //#define NOWINRES                 // 
 //#define NOGDICAPMASKS            // CC_*, LC_*, PC_*, CP_*, TC_*, RC_

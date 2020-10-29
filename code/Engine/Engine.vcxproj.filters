@@ -14,6 +14,42 @@
     <ClCompile Include="CoreLogSystem.cpp">
       <Filter>Debug\LogDetail</Filter>
     </ClCompile>
+    <ClCompile Include="Allocators.cpp">
+      <Filter>Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Sync.cpp">
+      <Filter>Core\Thread\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Atomic.cpp">
+      <Filter>Core\Thread\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMath.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Thread.cpp">
+      <Filter>Core\Thread\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="Stream.cpp">
+      <Filter>Core\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="SEString.cpp">
+      <Filter>Core\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32OS.cpp">
+      <Filter>PlatformOS</Filter>
+    </ClCompile>
+    <ClCompile Include="Path.cpp">
+      <Filter>Core\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="crc32.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Fibers.cpp">
+      <Filter>Core\Thread\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="Profiler.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -74,6 +110,72 @@
     <ClInclude Include="CoreLogSettings.h">
       <Filter>Debug\LogDetail</Filter>
     </ClInclude>
+    <ClInclude Include="SimpleWindows.h">
+      <Filter>0_Base\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="Array.h">
+      <Filter>Core\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocator.h">
+      <Filter>Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocators.h">
+      <Filter>Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Sync.h">
+      <Filter>Core\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Atomic.h">
+      <Filter>Core\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="CRT.h">
+      <Filter>0_Base</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Ref.h">
+      <Filter>Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="SIMD.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>Core\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Stream.h">
+      <Filter>Core\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Span.h">
+      <Filter>Core\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="SEString.h">
+      <Filter>Core\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="OS.h">
+      <Filter>PlatformOS</Filter>
+    </ClInclude>
+    <ClInclude Include="Path.h">
+      <Filter>Core\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="crc32.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="AssociativeArray.h">
+      <Filter>Core\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Delegate.h">
+      <Filter>Core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="DelegateList.h">
+      <Filter>Core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Fibers.h">
+      <Filter>Core\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Profiler.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Core">
@@ -102,6 +204,27 @@
     </Filter>
     <Filter Include="Debug\LogDetail\OS">
       <UniqueIdentifier>{b077243a-65c4-41a5-9280-647a561cc2d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Container">
+      <UniqueIdentifier>{9fc2802c-2191-4bd1-b965-beae89a0155e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Memory">
+      <UniqueIdentifier>{d0a23a76-4c05-4305-90ee-aadebe37053c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Thread">
+      <UniqueIdentifier>{d5930e15-79a3-4771-afd2-a063959af66a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Thread\OS">
+      <UniqueIdentifier>{10c0f6af-020d-4ab2-abe3-7a039e5cd73f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformOS">
+      <UniqueIdentifier>{41df3f9a-cf2c-4294-aff0-56c03c607e88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\FileSystem">
+      <UniqueIdentifier>{365d8e88-515b-4aed-b5e4-a30e140deecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Object">
+      <UniqueIdentifier>{e94b31a7-4c5a-4343-b247-3b0a673b3236}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

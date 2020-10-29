@@ -21,6 +21,6 @@ inline void PlatformLogPrint(std::string_view str, const LogVerbosity verbosity)
 	}
 
 	DWORD bytesWritten;
-	WriteConsoleA(handle, str.data(), str.size(), &bytesWritten, nullptr);
+	WriteConsoleA(handle, str.data(), (DWORD)str.size(), &bytesWritten, nullptr);
 #endif
 }
