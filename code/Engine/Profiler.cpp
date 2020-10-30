@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "Profiler.h"
+#include "ALLocator.h"
 #include "Allocators.h"
 #include "Array.h"
 #include "Sync.h"
@@ -10,6 +11,8 @@
 #include "SEMath.h"
 #include "Atomic.h"
 #include "Profiler.h"
+
+#include <cstring>
 
 namespace Profiler
 {
@@ -114,7 +117,7 @@ namespace Profiler
 			props.base.LoggerNameOffset = sizeof(props.base);
 			props.base.EnableFlags = EVENT_TRACE_FLAG_CSWITCH;
 			props.base.LogFileMode = EVENT_TRACE_REAL_TIME_MODE;
-			strcpy_s(props.name, KERNEL_LOGGER_NAME);
+			strcpy_s(props.name, KERNEL_LOGGER_NAMEA);
 
 			TraceProps tmp = props;
 			ControlTrace(NULL, KERNEL_LOGGER_NAME, &tmp.base, EVENT_TRACE_CONTROL_STOP);
@@ -132,7 +135,7 @@ namespace Profiler
 			}
 
 			static EVENT_TRACE_LOGFILE trace = {};
-			trace.LoggerName = KERNEL_LOGGER_NAME;
+			trace.LoggerName = (LPWSTR)KERNEL_LOGGER_NAME;
 			trace.ProcessTraceMode = PROCESS_TRACE_MODE_RAW_TIMESTAMP | PROCESS_TRACE_MODE_REAL_TIME | PROCESS_TRACE_MODE_EVENT_RECORD | PROCESS_TRACE_MODE_RAW_TIMESTAMP;
 			trace.EventRecordCallback = TraceTask::callback;
 			trace_task.open_handle = OpenTrace(&trace);

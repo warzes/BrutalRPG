@@ -1180,7 +1180,7 @@ inline float easeInOut(float t)
 
 float angleDiff(float a, float b);
 u64 randGUID();
-u32 Rand()
+u32 Rand();
 u32 Rand(u32 from, u32 to);
 void seedRandom(u32 seed);
 float randFloat();

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Allocator.h"
+#include "Span.h"
 
 template <typename T> struct Array
 {

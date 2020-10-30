@@ -50,6 +50,30 @@
     <ClCompile Include="Profiler.cpp">
       <Filter>Debug</Filter>
     </ClCompile>
+    <ClCompile Include="Serializer.cpp">
+      <Filter>Core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSystem.cpp">
+      <Filter>Core\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource.cpp">
+      <Filter>Core\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Core\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="JobSystem.cpp">
+      <Filter>Core\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <Filter>PlatformOS</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32ControllerDevice.cpp">
+      <Filter>PlatformOS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -176,6 +200,39 @@
     <ClInclude Include="Profiler.h">
       <Filter>Debug</Filter>
     </ClInclude>
+    <ClInclude Include="FlagSet.h">
+      <Filter>Core\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>Core\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Serializer.h">
+      <Filter>Core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystem.h">
+      <Filter>Core\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="HashMap.h">
+      <Filter>Core\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Core\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Core\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="JobSystem.h">
+      <Filter>Core\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>PlatformOS</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerDevice.h">
+      <Filter>PlatformOS</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Core">
@@ -225,6 +282,9 @@
     </Filter>
     <Filter Include="Core\Object">
       <UniqueIdentifier>{e94b31a7-4c5a-4343-b247-3b0a673b3236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Resource">
+      <UniqueIdentifier>{1eef81ca-a10a-4688-bce9-e5d2679e3185}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
